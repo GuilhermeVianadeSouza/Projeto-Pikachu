@@ -13,8 +13,13 @@ ul,ol,li{
     list-style: none;
 }
 
+:root {
+    --primary-color: #f5cf06;
+    --secundary-color: #8E4106;
+}
+
 body {
-    background-color: #f5cf06;
+    background-color: var(--primary-color);
     width: 100%;
     height: 100%;
     display: flex;
@@ -30,30 +35,47 @@ header{
 
 .Pokemon{
     display: flex;
-    padding: 10 10 50px 10;
+    padding: 50px ;
 }
 
-.Pokebola h3{
-    padding: 17px;
+.Pokemon h3 {
     font-size: 32px;
-    color: red;
+    color: var(--secundary-color);
 }
 
 main{
-
     display: flex;
     flex-grow: 1;
     height: 100%;
     width: 100%;
 }
 
+.Pikachu{
+    position: absolute;
+    align-items: center;
+}
+
+.Nome Pikachu {
+    align-items: center;
+    justify-content: center;
+}
+
 main h1 {
+    font-size: 400px;
+    color: white;
+    opacity: 30%;
     width: 400px;
 }
+
+main h2 {
+    font-size: 300px;
+    color: white;
+}
+
 
 footer{
     height: 100%;
     width: 100%;
-    position: relative;
-
+    align-items: center;
+    display: flex;
 }
