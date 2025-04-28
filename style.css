@@ -88,10 +88,12 @@ main{
 .Texts h2 {
     font-size: 300px;
     color: white;
-
     width: 400px;
 }
 
+.Lets {
+    font-size: 5vh;
+}
 
 footer{
     align-items: center;
