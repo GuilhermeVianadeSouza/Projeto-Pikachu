@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -16,12 +18,13 @@ ul,ol,li{
 :root {
     --primary-color: #f5cf06;
     --secundary-color: #8E4106;
+    --default-shadow:
 }
 
 body {
     background-color: var(--primary-color);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: "Righteous", sans-serif;
@@ -29,7 +32,7 @@ body {
 
 header{
     width: 100%;
-    height: 100%;
+    height: 10%;
     margin-left: 50px;
 }
 
@@ -39,7 +42,7 @@ header{
 }
 
 .Pokemon img {
-    left: 10px;
+    margin-right: 10px;
 }
 
 .Pokemon h3 {
@@ -64,16 +67,25 @@ main{
 }
 
 .Pikachu img{
-    width: 600px;
-    height: 541px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+    margin:auto;
 }
 
 .Texts {
-    position: center;
     top: 100px;
-    width: 100px;
     text-align: center;
     z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 
@@ -81,21 +93,59 @@ main{
     font-size: 400px;
     color: white;
     opacity: 20%;
-    width: 400px;
+    width: 100%;
+    margin:auto;
+
     position: absolute;
+    text-align: center;
 }
 
 .Texts h2 {
     font-size: 300px;
     color: white;
-    width: 400px;
+    width: 100vw;
+    
+    margin: auto;
+}
+.info{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.Lets {
-    font-size: 5vh;
+.apresentacao{
+    width: 500px;
+    font-size: 20px;
+    color: var(--secundary-color);
+}
+.lets {
+    font-size: 64px;
+    color: var(--secundary-color);
+}
+
+.botao_download{
+    display: flex;
+    width: 411px;
+    height: 100px;
+    background-color: var(--secundary-color);
+    border: none;
+    font-family: "Righteous", sans-serif;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-size: 48px;
+    color: white;
 }
 
 footer{
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
     display: flex;
+    margin-right: 50%;
 }
